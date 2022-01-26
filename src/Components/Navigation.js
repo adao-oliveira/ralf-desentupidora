@@ -40,7 +40,7 @@ const NavStyles = styled.nav`
   .mobile-menu-icon {
     color: var(--deep-dark);
     position: absolute;
-    right: 5rem;
+    right: -20px;
     top: -1rem;
     width: 4rem;
     cursor: pointer;
@@ -117,14 +117,14 @@ export default function Navigation() {
             </Link>
 
             {/* MOBILE */}
-            <Link to="/" style={{ color: '#fff', textDecoration: 'none' }} className='d-block d-md-none'>
+            {/* <Link to="/" style={{ color: '#fff', textDecoration: 'none' }} className='d-block d-md-none'>
                 <img src="https://res.cloudinary.com/robles-identity/image/upload/v1642969624/1642969599711_fjsqad.png" className="logo" alt="Robles Identity"
                     style={{
-                        height: '60%',
-                        width: '50%'
+                        height: '50%',
+                        width: '40%'
                     }}
                 />
-            </Link>
+            </Link> */}
 
             <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
                 <div

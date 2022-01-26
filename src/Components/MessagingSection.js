@@ -44,7 +44,7 @@ function MessagingSection() {
 
 const MessageStyle = styled.section`
 h2{
-    font-size: 30px;
+    font-size: 25px;
 }
     .message-con{
         margin-top: 150px;

@@ -45,7 +45,7 @@ const HeaderContentStyled = styled.div`
             font-size: 4rem;
             font-weight: 600;
             @media screen and (max-width: 700px){
-                font-size: 3rem;
+                font-size: 2rem;
             }
         }
 
