@@ -1,8 +1,8 @@
 import Header from "./Components/Header";
 import { OuterLayout } from './styles/Layouts';
-import ChartSection from "./Components/ChartSection";
+import FaqServices from "./Components/FaqServices";
 import MessagingSection from "./Components/MessagingSection";
-import FAQSection from "./Components/FAQSection";
+import FaqTip from "./Components/FaqTip";
 import Footer from "./Components/Footer";
 import { Fade } from "react-reveal";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -39,10 +39,10 @@ function App() {
             <MessagingSection />
           </Fade>
           <Fade right>
-            <ChartSection />
+            <FaqServices />
           </Fade>
           <Fade left>
-            <FAQSection />
+            <FaqTip />
           </Fade>
         </OuterLayout>
 

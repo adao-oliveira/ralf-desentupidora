@@ -17,7 +17,7 @@ function HeaderContent() {
                 </div>
             </Fade>
             <Fade right>
-                <div className="right-content">
+                <div className="right-content d-none d-md-block">
                     <img src="https://freepikpsd.com/file/2019/10/desentupidora-png-2-Transparent-Images.png" alt="" className="phone" />
                 </div>
             </Fade>

@@ -4,7 +4,7 @@ import plus from '../img/plus.svg';
 import minus from '../img/minus.svg';
 import { Fade } from 'react-reveal';
 
-function Question({ title, description }) {
+function FaqServies({ title, description }) {
     const [toggle, setToggle] = useState(false);
 
     const btnToggler = () => {
@@ -16,8 +16,8 @@ function Question({ title, description }) {
             <QuestionStyled>
                 <div className="q-con">
                     <div className="question toggle-title">
-                        <input type='checkbox' id='question-1' />
-                        <label onClick={btnToggler} for='question-1'>{title}</label>
+                        <input type='checkbox' />
+                        <label onClick={btnToggler}>{title}</label>
                         <button>
                             {toggle ? <img src={minus} alt="" /> : <img src={plus} alt="" />}
                         </button>
@@ -34,13 +34,14 @@ function Question({ title, description }) {
 const QuestionStyled = styled.div`
 background-color: #fff;
 margin: 1rem 0;
-padding: 1.4rem 1rem;
+padding: 1rem 1rem;
 border-radius: 24px;
 transition: all .4s ease-in-out;
 box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
 
-.question input,
-.question .answer { display: none }
+.question input, .question .answer {
+    display: none
+}
 
 .question label {
   display: inline-block;
@@ -60,7 +61,7 @@ p{
 label{
     color: #09456c;
     transition: all .4s ease-in-out;
-    font-size: 1.3rem;
+    font-size: 15px;
     text-transform: uppercase;
     cursor: pointer;
 
@@ -79,4 +80,4 @@ label{
     }
 `;
 
-export default Question;
+export default FaqServies;

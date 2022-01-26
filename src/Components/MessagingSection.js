@@ -14,7 +14,7 @@ function MessagingSection() {
                         <h2 className="secondary-heading">
                             SOBRE NÓS
                         </h2>
-                        <p>
+                        <p style={{marginBottom:'2rem'}}>
                             A Desentupidora em Campinas trabalha com prestação de serviço de desentupimento com atendimento emergencial 24 horas.
                             Contamos com suporte e serviços altamente qualificados em sistemas de desentupimento, estamos de prontidão para atender aos chamados de desentupimento de pias, vasos sanitários, ralos, colunas industriais, esgoto e redes de esgoto.
                             Acreditamos que para alcançar a excelência é necessário qualidade no serviço e na Desentupidora Ralf em Campinas você pode confiar. Temos anos de experiência e possuímos atendimento emergencial 24 horas.
@@ -45,6 +45,7 @@ function MessagingSection() {
 const MessageStyle = styled.section`
 h2{
     font-size: 25px;
+    margin-bottom: 20px;
 }
     .message-con{
         margin-top: 150px;
@@ -72,7 +73,7 @@ h2{
         }
         .bgCircle{
             position: absolute;
-            top: -40%;
+            top: -30%;
             left: 0;
             z-index: -1;
         }
@@ -84,7 +85,7 @@ h2{
         }
         .bgCircle{
             position: absolute;
-            bottom: -40%;
+            bottom: -15%;
             right: 0;
             z-index: -1;
         }

@@ -21,20 +21,39 @@ function Footer() {
     <FooterStyled>
       <InnerLayout>
         <footer>
-          <div className="main-content">
-            <div className="left box">
-              <h2>Sobre</h2>
-              <div className="content">
-                <p>Resumo sobre os serviços prestados</p>
-                <div className="social">
-                  <a href="https://facebook.com/"><span className="fab fa-facebook-f"></span></a>
-                  <a href="https://instagram.com/grupomaximiano/"><span className="fab fa-instagram"></span></a>
-                  <a href="https://www.whatsapp.com/"><span className="fab fa-whatsapp"></span></a>
+          <div class="main-content">
+            <div class="left box">
+              <h2> Sobre </h2>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste facilis harum eos vel incidunt distinctio corrupti iure</p>
+
+                <div class="social">
+                  <a href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#"><span class="fab fa-instagram"></span></a>
+                  <a href="#"><span class="fab fa-whatsapp"></span></a>
                 </div>
               </div>
             </div>
+            <div class="center box">
+              <h2>Endereço</h2>
+              <div class="content">
+                <div class="place">
+                  <span class="fas fa-map-marker"></span>
+                  <span class="text">Rua teste, Campinas</span>
+                </div>
 
-            <div className="right box">
+                <div class="phone">
+                  <span class="fas fas fa-phone-alt"></span>
+                  <span class="text">+55 19 9999-9999</span>
+                </div>
+
+                <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="text">exemplo@exemplo.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="right box">
               <h2>Faça orçamento</h2>
               <div className="content">
                 {/* <form onSubmit={sendEmail}> */}
@@ -62,12 +81,10 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="copyright">
-            <center>
-              <span className="credit"><p style={{display:'inline'}}>Desenvolvido por</p> <a href="http://roblesidentity.herokuapp.com/">Robles Identity</a></span>
-              <br /><i className="far fa-copyright text-warning"></i>
-              <span> {new Date().getFullYear()} Todos os Direitos reservados</span>
-            </center>
+          <div class="bottom">
+            <div class="center">
+              <span class="credit">Criado por <a href="http://roblesidentity.herokuapp.com/">Robles Identity</a></span> <span class="far fa-copyright"> {new Date().getFullYear()} - Todos os diteitos reservados</span>
+            </div>
           </div>
         </footer>
       </InnerLayout>
@@ -79,6 +96,10 @@ const FooterStyled = styled.footer`
     .footer-con{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+      margin-top 1rem;
+      margin-bottom 1rem;
     }
 
 `;

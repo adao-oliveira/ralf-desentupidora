@@ -38,6 +38,7 @@ const NavStyles = styled.nav`
     }
   }
   .mobile-menu-icon {
+    font-size: 2.5rem;
     color: var(--deep-dark);
     position: absolute;
     right: -20px;

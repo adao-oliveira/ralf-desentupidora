@@ -1,206 +1,151 @@
-/*------------------------------------------- Footer Main -----------------------------------*/
-
 footer{
-    bottom: 0px;
-    width: 100%;
-    background: #09456c;
+  bottom: 0px;
+  width: 100%;
+  background: #fff;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  color: var(--blue-primary);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: var(--blue-primary);
+  top: -10px;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  width: 40px;
+  height: 40px;
+  background: var(--blue-primary);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #d1d1d1;
+}
+.left .content p{
+  text-align: justify;
+}
+.center .content .fas{
+  font-size: 23px;
+  background: var(--blue-primary);
+  width: 45px;
+  height: 45px ;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #d1d1d1;
+}
+.center .content .text{
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 10px 0;
+}
+.center .content .msg{
+  margin-top: 10px;
+}
+.right form {
+  background-color: #d1d1d1;
+  padding: 10px;
+  border-radius: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 17px;
+  background: #fff;
+  color: var(--blue-primary);
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.right form input{
+  height: 35px;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline: none;
+  outline-color: none;
+}
+.right form .text{
+  font-size: 17px;
+  margin-bottom: 2px;
+  color: var(--blue-primary);
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: var(--blue-primary);
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #d1d1d1;
+}
+.bottom .center{
+  padding: 5px;
+  font-size: 15px;
+  background: #151515;
+  text-align: center;
+}
+.bottom .center span{
+  color: #656565;
+}
+.bottom .center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom .center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px){
+  footer{
+      bottom: 0px;
   }
   .main-content{
-    display: flex;
-  }
-  .main-content .box{
-    flex-basis: 50%;
-    padding: 10px 20px;
-  }
-  .box h2{
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.125rem;
-    text-transform: uppercase;
-  }
-  .box .content{
-    margin: 20px 0 0 0;
-    position: relative;
-    font-size: 1.0625rem;
-  }
-  .box .content:before{
-    position: absolute;
-    content: '';
-    top: -10px;
-    height: 2px;
-    width: 100%;
-    background: #fff;
-  }
-  .box .content:after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    background: #fff;
-    top: -10px;
-  }
-  .left .content p{
-    text-align: justify;
-    color: #fff;
-    font-weight: 400;
-  }
-  .left .content a{
-    color: #fff;
-  }
-  .left .content .social{
-    margin: 20px 0 0 0;
-    text-align: center;
-  }
-  .left .content .social a{
-    padding: 0 2px;
-  }
-  .left .content .social a span{
-    height: 40px;
-    width: 80px;
-    background: #fff;
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  .left .content .social a span:hover{
-    background: #d4d4d4;
-  }
-  .left .content a:hover{
-    color: #151515;
-  }
-  .center .content .fas{
-    font-size: 1.4375rem;
-    background: #1a1a1a;
-    height: 45px;
-    width: 80px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .center .content .fas:hover{
-    background: #fff;
-    text-decoration: none;
-  }
-  .center .content .text{
-    font-size: 1.0625rem;
-    font-weight: 500;
-    padding-left: 10px;
-  }
-  .center .content ul li a{
-    margin: 15px 0;
-    text-decoration: none;
-  }
-  .center .content ul li a:hover{
-    color: #fff;
-    border-color: #fff;
-    padding-left: 20px;
-    }
-    .right .content ul li a:hover{
-      color: #fff;
-      border-color: #fff;
-      padding-left: 20px;
-      }
-    
-  
-  .center .content ul li a::before {
-    font-family: FontAwesome;
-    position: absolute;
-    left: 5px;
-    line-height: 30px;
-    font-size: 16px;
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-  }
-  .center .content ul li a:hover::before {
-    left: 5px;
-  }
-  
-  .right form .text{
-    font-size: 1.0625rem;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 2px;
-    color: #fff;
-  }
-  .right form .msg{
-    margin-top: 10px;
-  }
-  .right form input, .right form textarea{
-    width: 100%;
-    font-size: 1.0625rem;
-    background: #fff;
-    padding-left: 10px;
-    border: 1px solid #fff;
-    color: #09456c;
-  }
-  .right form input:focus,
-  .right form textarea:focus{
-    outline: none;
-    outline-color: none;
-  }
-  .right form input{
-    height: 35px;
-    outline: none;
-    outline-color: none;
-  }
-  .right form .btn{
-    margin-top: 10px;
-    width: 100%;
-  }
-  .right form .btn button{
-    height: 40px;
-    border: none;
-    outline: none;
-    outline-color: none;
-    background: #fff;
-    font-size: 1.0625rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s;
-    width: 100%;
-    text-align: center;
-    border-radius: 6px;
-  }
-  .right form .btn button:hover{
-    background: #d1d1d1;
-  }
-  .copyright center{
-    padding: 5px;
-    font-size: 0.9375rem;
-    border-top: 1px solid #d1d1d1;
-    background: #09456c;
-  }
-  .copyright center span{
-    color: #fff;
-  }
-  .copyright center p{
-      color: #fff;
-  }
-  .copyright center a{
-    color: #111;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .copyright center a:hover{
-    text-decoration: underline;
-  }
-  @media screen and (max-width: 900px) {
-    footer{
-      position: relative;
-      bottom: 0px;
-    }
-    .main-content{
       flex-wrap: wrap;
       flex-direction: column;
-    }
-    .main-content .box{
-      margin: 5px 0;
-    }
   }
+  .main-content .box{
+      margin: 5px 0;
+  }
+}
