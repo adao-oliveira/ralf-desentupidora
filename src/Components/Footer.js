@@ -28,9 +28,9 @@ function Footer() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste facilis harum eos vel incidunt distinctio corrupti iure</p>
 
                 <div class="social">
-                  <a href="#"><span class="fab fa-facebook-f"></span></a>
-                  <a href="#"><span class="fab fa-instagram"></span></a>
-                  <a href="#"><span class="fab fa-whatsapp"></span></a>
+                  <a href="https://facebook.com/"><span class="fab fa-facebook-f"></span></a>
+                  <a href="https://instagram.com/"><span class="fab fa-instagram"></span></a>
+                  <a href="https://whatsapp.com/"><span class="fab fa-whatsapp"></span></a>
                 </div>
               </div>
             </div>
