@@ -43,7 +43,7 @@ function Footer() {
                 </div>
 
                 <div class="phone">
-                  <span class="fas fas fa-phone-alt"></span>
+                  <span class="fas fas fa-phone"></span>
                   <span class="text">+55 19 9999-9999</span>
                 </div>
 

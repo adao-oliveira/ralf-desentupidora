@@ -9,47 +9,55 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Orcamento from './pages/Orcamento';
+import Services from './pages/Services';
+import ProjectsSection from './Components/ProjectsSection'
 
 function App() {
   return (
     <>
-      <div className="App">
+      <Router>
+        <Header />
+        <Switch>
 
-        <Router>
-          <Header />
-          <Switch>
-            
-            <Route path="/about">
-              <About />
-            </Route>
+          <Route path="/about">
+            <About />
+          </Route>
 
-            <Route path="/contact">
-              <Contact />
-            </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
 
-            <Route path="/orcamento">
-              <Orcamento />
-            </Route>
+          <Route path="/orcamento">
+            <Orcamento />
+          </Route>
 
-          </Switch>
-        </Router>
+          <Route path="/services">
+            <Services />
+          </Route>
 
-        <OuterLayout>
-          <Fade left>
-            <MessagingSection />
-          </Fade>
-          <Fade right>
-            <FaqServices />
-          </Fade>
-          <Fade left>
-            <FaqTip />
-          </Fade>
-        </OuterLayout>
+          <OuterLayout>
+            {/* <Fade left>
+            <CardSection />
+          </Fade> */}
+            <Fade left>
+              <MessagingSection />
+            </Fade>
+            <Fade right>
+              <FaqServices />
+            </Fade>
+            <Fade right>
+              <ProjectsSection />
+            </Fade>
+            <Fade left>
+              <FaqTip />
+            </Fade>
+          </OuterLayout>
 
+        </Switch>
         <Fade bottom>
           <Footer />
         </Fade>
-      </div>
+      </Router>
     </>
   );
 }

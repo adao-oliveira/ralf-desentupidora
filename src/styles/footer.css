@@ -50,7 +50,7 @@ footer{
 .left .content p{
   text-align: justify;
 }
-.center .content .fas{
+.center .content .fas, .fa, .fab{
   font-size: 23px;
   background: var(--blue-primary);
   width: 45px;
@@ -60,14 +60,17 @@ footer{
   border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
+  color: #d1d1d1;
 }
-.center .content .fas:hover{
+.center .content .fas:hover, .fa:hover, .fab:hover{
   background: #d1d1d1;
+  color: var(--blue-primary);
 }
 .center .content .text{
   font-size: 17px;
   font-weight: 500;
   padding-left: 10px;
+  color: var(--blue-primary);
 }
 .center .content .phone{
   margin: 10px 0;
@@ -117,9 +120,6 @@ footer{
   font-weight: 500;
   cursor: pointer;
   transition: .3s;
-}
-.right form .btn button:hover{
-  background: #d1d1d1;
 }
 .bottom .center{
   padding: 5px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { InnerLayout } from '../styles/Layouts';
-import FaqServices from '../FaqServices';
+import FaqServices from '../assets/data/FaqServices';
 import Question from './Question';
 
 function ChartSection() {

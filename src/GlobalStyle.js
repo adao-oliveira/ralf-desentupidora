@@ -16,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
         --gray-2: #363636;
         --white : white;
         --black: black;
+
+        --dark-bg: #262626;
+        --deep-dark: #1E1E1E;
     }
     *{
         margin: 0;
