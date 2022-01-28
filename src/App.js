@@ -7,7 +7,6 @@ import Footer from "./Components/Footer";
 import { Fade } from "react-reveal";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './pages/About';
-import Contact from './pages/Contact';
 import Orcamento from './pages/Orcamento';
 import Services from './pages/Services';
 import ProjectsSection from './Components/ProjectsSection'
@@ -21,10 +20,6 @@ function App() {
 
           <Route path="/about">
             <About />
-          </Route>
-
-          <Route path="/contact">
-            <Contact />
           </Route>
 
           <Route path="/orcamento">
