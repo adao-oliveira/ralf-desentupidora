@@ -24,7 +24,7 @@ function FAQSection() {
 
 const FaqStyled = styled.section`
     h3 {
-        margin-top: 40px;
+        margin-top: 18rem;
     }
     .c-para{
         width: 60%;

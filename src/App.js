@@ -40,9 +40,9 @@ function App() {
             <Fade right>
               <FaqServices />
             </Fade>
-            <Fade right>
+            {/* <Fade right>
               <ProjectsSection />
-            </Fade>
+            </Fade> */}
             <Fade left>
               <FaqTip />
             </Fade>

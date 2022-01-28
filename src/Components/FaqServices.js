@@ -8,74 +8,53 @@ function ChartSection() {
     return (
         <ChartStyled >
             <InnerLayout>
-                <div className="container">
-                    <h3 style={{ color: 'var(--blue-primary)', textAlign: 'center', marginTop:'-4rem' }}>NOSSOS SERVIÇOS</h3>
-                    <span id='po-article-header'></span>
-                    <div className="chart-con">
-                        <div className="chart-left">
-                            <div className="questions-con">
-                                {
-                                    FaqServices.map((q) => {
-                                        return <Question key={q.id} {...q} />
-                                    })
-                                }
+            <div class="container">
+            <div class="content first-content">
+                <div class="first-column">
+                    <h2>Nossos serviços</h2>
+                    <div class="social-media">
+                    <div className="chart-left">
+                                <div className="questions-con">
+                                    {
+                                        FaqServices.map((q) => {
+                                            return <Question key={q.id} {...q} />
+                                        })
+                                    }
+                                </div>
                             </div>
-                        </div>
-                        <div className="chart-right">
-                            <div className="stats">
-                                {/* <img src={chart} alt="" /> */}
-                                <form class="text-white" style={{ backgroundColor: 'var(--blue-primary)', padding: '10px', borderRadius: '10px' }}>
-                                    <div class="card-header p-0">
-                                        <div class="text-white text-center py-2">
-                                            <h4>
-                                                <i class="fa fa-envelope"></i> Precisando de Orçamento?
-                                            </h4>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-3">
-
-                                        <div class="form-group">
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <i class="fa fa-user text-info"></i>
-                                                    </div>
-                                                </div>
-                                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required />
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <i class="fa fa-envelope text-info"></i>
-                                                    </div>
-                                                </div>
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor e-mail" required />
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <i class="fa fa-comment text-info"></i>
-                                                    </div>
-                                                </div>
-                                                <textarea class="form-control" placeholder="Mensagem" required></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="text-center">
-                                            {/* <input type="submit" value="Enviar" class="btn btn-light rounded-0 py-2 w-50" /> */}
-                                            <button type="submit" id="enviar" class="btn btn-light py-2">Enviar</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
                     </div>
+                    {/* <!-- social media --> */}
                 </div>
+                <div class="second-column">
+                    <h2 class="title-second">Fazer orçamento</h2>
+                    <p class="description-second">Preencha o formulário abaixo e informe no campo MENSAGEM <br /> o tipo de seviço que precisa e entraremos em contato em breve </p>
+                    <form class="form">
+                        <label class="label-input" for="">
+                            <i class="far fa-user icon-modify"></i>
+                            <input type="text" placeholder="Nome completo" />
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="E-mail" />
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="fas fa-phone icon-modify"></i>
+                            <input type="number" maxLength={11} placeholder="Número de telefone com (DDD)" />
+                        </label>
+
+                        <label class="label-input" for="">
+                            <i class="far fa-comment-alt icon-modify"></i>
+                            <input type="text" placeholder="Mensagem" />
+                        </label>
+
+                        <button class="btn btn-second">Enviar</button>
+                    </form>
+                </div>
+                {/* <!-- second column --> */}
+            </div>
+        </div>
             </InnerLayout>
         </ChartStyled >
     )
@@ -115,82 +94,164 @@ const ChartStyled = styled.section`
         }
     }
 
-    .faq {
-        max-width:450px;
-        margin: auto;
-        position: relative;
-        height: auto;
-      }
-      
-      .faq-container {
-        width: 100%;
-        height: 100%;
-      }
-      
-      .faq-label {
-        cursor: pointer;
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #fff;
-        border-radius: 5px;
-      }
-      
-      .faq-label-text {
-        color: var(--blue-primary);
-        font-weight: bold;
-      }
-      
-      .faq-label-icon {
-        padding: 2px 3px;
-        background: #808080;
-        border-radius: 6px;
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-      
-      .material-icons {
-        color: white;
-        transition: 0.3s ease;
-      }
-      
-      .faq-answer {
-        transition: 0.3s ease;
-        margin-top: 15px;
-        height: 0;
-        border-radius: 6px;
-        color: rgba(127, 121, 121, 1);
-        overflow: hidden;
-      }
-      
-      .faq-answer-content {
-        padding: 10px 0 10px 15px;
-      }
-      
-      .active {
-        background: #FFFFFF;
-        border: 1px solid #C7C4C4;
-        height: auto;
-        margin-bottom: 25px;
-      }
-      .rotate{
-        transform: rotate(180deg)
-      }
-    
-      #po-article-header:after {
+        // height: 100vh;
+    }
+    .content {
+        background-color: #d1d1d1;
+        border-radius: 15px;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .content::before {
         content: "";
-        display: block;
-        height: 5px;
-        background: #09456c;
-        width: 70px;
-        margin: 0 auto;
         position: absolute;
-        margin-top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        background-color: var(--blue-primary);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        left: 0;
+    }
+    .title {
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .title-second {
+        color: var(--blue-primary);
+    }
+    .description-second {
+        color: #7f8c8d;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .btn {
+        border-radius: 15px;
+        text-transform: uppercase;
+        color: var(--blue-primary);
+        font-size: 10px;
+        padding: 10px 50px;
+        cursor: pointer;
+        font-weight: bold;
+        align-self: center;
+        border: none;
+        margin-top: 1rem;
+    }
+    .btn-second {
+        background-color: var(--blue-primary);
+        border: 1px solid var(--blue-primary);
+        transition: background-color .5s;
+        color: #fff;
+    }
+    .btn-second:hover {
+        background-color: #fff;
+        border: 1px solid var(--blue-primary);
+        color: var(--blue-primary);
+    }
+    .first-content a {
+        text-decoration: none;
+    }
+    .first-content {
+        display: flex;
+    }
+    .first-content .second-column {
+        z-index: 11;
+    }
+    .first-column {
+        text-align: center;
+        width: 40%;
+        z-index: 10;
+    }
+    .second-column {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+    }
+    .form input {
+        height: 45px;
+        width: 100%;
+        border: none;
+        background-color: #ecf0f1;
+        color: var(--blue-primary);
+        font-weight: 600;
+        padding-left: 5px;
+        outline: none;
+        outline-color: none;
+    }
+    input:-webkit-autofill 
+    {    
+        -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+        -webkit-text-fill-color: #000 !important;
+    }
+    .label-input {
+        background-color: #d1d1d1;
+        display: flex;
+        align-items: center;
+        margin: 8px;
+        border-radius: 5px;
+    }
+    .icon-modify {
+        color: var(--blue-primary);
+        padding: 0 5px;
+    }
+    
+    /* second content*/
+    
+    .second-content {
+        position: absolute;
+        display: flex;
+    }
+    .second-content .first-column {
+        order: 2;
+        z-index: -1;
+    }
+    .second-content .second-column {
+        order: 1;
+        z-index: -1;
+    }
+    
+    /*VERSÃO MOBILE*/
+    @media screen and (max-width: 1040px) {
+        .content {
+            width: 100%;
+            // height: 100%;
+        }
+    
+        .content::before {
+            width: 100%;
+            height: 70%;
+            top: 0;
+            border-radius: 0;
+        }
+        .first-content, .second-content {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    
+        .first-column, .second-column {
+            width: 100%;
+        }
+    
+    @media screen and (max-width: 740px) {
+        .form {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 425px) {
+        .form {
+            width: 100%;
+        }
     }
 `;
 
