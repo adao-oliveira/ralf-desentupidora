@@ -41,7 +41,7 @@ const NavStyles = styled.nav`
     }
   }
   .mobile-menu-icon {
-    font-size: 28px;
+    font-size: 40px;
     position: absolute;
     right: 1rem;
     top: 1rem;
