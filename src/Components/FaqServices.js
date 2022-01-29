@@ -1,19 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-import { InnerLayout } from '../styles/Layouts';
-import FaqServices from '../assets/data/FaqServices';
-import Question from './Question';
+import React from 'react'
+import styled from 'styled-components'
+import { InnerLayout } from '../styles/Layouts'
+import FaqServices from '../assets/data/FaqServices'
+import Question from './Question'
 
 function ChartSection() {
     return (
         <ChartStyled >
             <InnerLayout>
-            <div class="container">
-            <div class="content first-content">
-                <div class="first-column">
-                    <h2>Nossos serviços</h2>
-                    <div class="social-media">
-                    <div className="chart-left">
+                <div className="container">
+                    <div className="section first-section">
+                        <div className="column-left">
+                            <h2>Nossos serviços</h2>
+                            <div className="chart-left">
                                 <div className="questions-con">
                                     {
                                         FaqServices.map((q) => {
@@ -22,93 +21,66 @@ function ChartSection() {
                                     }
                                 </div>
                             </div>
+                        </div>
+                        <div className="column-right">
+                            <h2>Fazer orçamento</h2>
+                            <p>Preencha o formulário abaixo e informe no campo MENSAGEM <br /> o tipo de seviço que precisa e entraremos em contato em breve </p>
+                            <form className="form-faq">
+                                <label className="label-input-faq" for="">
+                                    <i className="far fa-user icon-form-faq"></i>
+                                    <input type="text" placeholder="Nome completo" />
+                                </label>
+
+                                <label className="label-input-faq" for="">
+                                    <i className="far fa-envelope icon-form-faq"></i>
+                                    <input type="email" placeholder="E-mail" />
+                                </label>
+
+                                <label className="label-input-faq" for="">
+                                    <i className="fas fa-phone icon-form-faq"></i>
+                                    <input type="number" maxLength={11} placeholder="Número de telefone com (DDD)" />
+                                </label>
+
+                                <label className="label-input-faq" for="">
+                                    <i className="far fa-comment-alt icon-form-faq"></i>
+                                    <input type="text" placeholder="Mensagem" />
+                                </label>
+
+                                <button className="btn btn-form-faq">Enviar</button>
+                            </form>
+                        </div>
+                        {/* <!-- second column --> */}
                     </div>
-                    {/* <!-- social media --> */}
                 </div>
-                <div class="second-column">
-                    <h2 class="title-second">Fazer orçamento</h2>
-                    <p class="description-second">Preencha o formulário abaixo e informe no campo MENSAGEM <br /> o tipo de seviço que precisa e entraremos em contato em breve </p>
-                    <form class="form">
-                        <label class="label-input" for="">
-                            <i class="far fa-user icon-modify"></i>
-                            <input type="text" placeholder="Nome completo" />
-                        </label>
-
-                        <label class="label-input" for="">
-                            <i class="far fa-envelope icon-modify"></i>
-                            <input type="email" placeholder="E-mail" />
-                        </label>
-
-                        <label class="label-input" for="">
-                            <i class="fas fa-phone icon-modify"></i>
-                            <input type="number" maxLength={11} placeholder="Número de telefone com (DDD)" />
-                        </label>
-
-                        <label class="label-input" for="">
-                            <i class="far fa-comment-alt icon-modify"></i>
-                            <input type="text" placeholder="Mensagem" />
-                        </label>
-
-                        <button class="btn btn-second">Enviar</button>
-                    </form>
-                </div>
-                {/* <!-- second column --> */}
-            </div>
-        </div>
             </InnerLayout>
         </ChartStyled >
     )
 }
 
 const ChartStyled = styled.section`
-    .chart-con{
-        margin-top: 5rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        @media screen and (max-width: 1347px){
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .chart-left{
-            width: 80%;
-            @media screen and (max-width: 1347px){
+    .chart-left{
+        width: 80%;
+        @media screen and (max-width: 1347px) {
                 width: 100%;
-            }
-            .stats{
-                img{
-                    box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
-                    border-radius: 62px;
-                    width: 100%;
-                }
-                .stats-money{
-                    display: flex;
-                    padding-bottom: 1.3rem;
-                    justify-content: space-between;
-                }
-            }
-        }
-
-        .chart-right{
-            p{
-                padding: 1.3rem 0;
             }
         }
     }
-
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        // height: 100vh;
     }
-    .content {
-        background-color: #d1d1d1;
+    .section {
+        background-color: var(--blue-primary);
         border-radius: 15px;
         justify-content: space-between;
         align-items: center;
         position: relative;
+        width: 100%;
+        padding: 20px;
     }
-    .content::before {
-        content: "";
+    .section::before {
+        section: "";
         position: absolute;
         background-color: var(--blue-primary);
         border-top-left-radius: 15px;
@@ -120,13 +92,13 @@ const ChartStyled = styled.section`
         font-weight: bold;
         text-transform: capitalize;
     }
-    .title-second {
-        color: var(--blue-primary);
+    h2 {
+        color: var(--white);
     }
-    .description-second {
-        color: #7f8c8d;
+    p {
+        color: #d1d1d1;
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 600;
         line-height: 30px;
     }
     .btn {
@@ -141,43 +113,46 @@ const ChartStyled = styled.section`
         border: none;
         margin-top: 1rem;
     }
-    .btn-second {
+    .btn-form-faq {
         background-color: var(--blue-primary);
         border: 1px solid var(--blue-primary);
         transition: background-color .5s;
         color: #fff;
     }
-    .btn-second:hover {
+    .btn-form-faq:hover {
         background-color: #fff;
         border: 1px solid var(--blue-primary);
         color: var(--blue-primary);
     }
-    .first-content a {
+    .first-section a {
         text-decoration: none;
     }
-    .first-content {
+    .first-section {
         display: flex;
     }
-    .first-content .second-column {
+    .first-section .column-right {
         z-index: 11;
     }
-    .first-column {
+    .column-left {
         text-align: center;
         width: 40%;
         z-index: 10;
     }
-    .second-column {
+    .column-right {
         width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .form {
+    .form-faq {
         display: flex;
         flex-direction: column;
         width: 55%;
+        background-color: #d1d1d1;
+        padding: 20px;
+        border-radius: 20px;
     }
-    .form input {
+    .form-faq input {
         height: 45px;
         width: 100%;
         border: none;
@@ -193,63 +168,47 @@ const ChartStyled = styled.section`
         -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
         -webkit-text-fill-color: #000 !important;
     }
-    .label-input {
-        background-color: #d1d1d1;
+    .label-input-faq {
+        background-color: var(--blue-primary);
         display: flex;
         align-items: center;
         margin: 8px;
         border-radius: 5px;
     }
-    .icon-modify {
-        color: var(--blue-primary);
+    .icon-form-faq {
+        color: #d1d1d1;
         padding: 0 5px;
-    }
-    
-    /* second content*/
-    
-    .second-content {
-        position: absolute;
-        display: flex;
-    }
-    .second-content .first-column {
-        order: 2;
-        z-index: -1;
-    }
-    .second-content .second-column {
-        order: 1;
-        z-index: -1;
     }
     
     /*VERSÃO MOBILE*/
     @media screen and (max-width: 1040px) {
-        .content {
+        .section {
             width: 100%;
-            // height: 100%;
         }
     
-        .content::before {
+        .section::before {
             width: 100%;
             height: 70%;
             top: 0;
             border-radius: 0;
         }
-        .first-content, .second-content {
+        .first-section {
             flex-direction: column;
             justify-content: space-around;
         }
     
-        .first-column, .second-column {
+        .column-left, .column-right {
             width: 100%;
         }
     
     @media screen and (max-width: 740px) {
-        .form {
+        .form-faq {
             width: 50%;
         }
     }
     
     @media screen and (max-width: 425px) {
-        .form {
+        .form-faq {
             width: 100%;
         }
     }

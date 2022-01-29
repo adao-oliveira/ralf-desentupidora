@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import plus from '../img/plus.svg';
-import minus from '../img/minus.svg';
-import { Fade } from 'react-reveal';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import plus from '../img/plus.svg'
+import minus from '../img/minus.svg'
+import { Fade } from 'react-reveal'
 
 function FaqServies({ title, description }) {
     const [toggle, setToggle] = useState(false);

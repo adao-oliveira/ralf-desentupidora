@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 import arrow from '../img/arrow.svg'
 
 function Secondarybutton({name}) {

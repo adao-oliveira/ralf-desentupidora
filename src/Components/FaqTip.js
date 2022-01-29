@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { InnerLayout } from '../styles/Layouts';
-import questions from '../assets/data/questions';
-import Question from './Question';
+import React from 'react'
+import styled from 'styled-components'
+import { InnerLayout } from '../styles/Layouts'
+import questions from '../assets/data/questions'
+import Question from './Question'
 function FAQSection() {
     return (
         <FaqStyled>

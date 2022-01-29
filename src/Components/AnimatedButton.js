@@ -1,8 +1,8 @@
-import React from 'react';
-import arrow from '../img/arrow.svg';
-import styled from 'styled-components';
-import blob1 from '../img/blob_top.svg';
-import blob2 from '../img/blob_bottom.svg';
+import React from 'react'
+import arrow from '../img/arrow.svg'
+import styled from 'styled-components'
+import blob1 from '../img/blob_top.svg'
+import blob2 from '../img/blob_bottom.svg'
 
 function AnimatedButton({name}) {
     return (

@@ -1,7 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Secondarybutton from './SecondaryButton';
-import { Fade } from 'react-reveal';
+import React from 'react'
+import styled from 'styled-components'
+import Secondarybutton from './SecondaryButton'
+import { Fade } from 'react-reveal'
+import { Link } from 'react-router-dom'
 
 function HeaderContent() {
     return (
@@ -10,9 +11,11 @@ function HeaderContent() {
                 <div className="left-content">
                     <div className="left-text-container">
                         <h1>Precisa de uma desentupidora em Campinas?</h1>
-                        <p className="white">
-                            <Secondarybutton name={'Fazer orçamento'} />
-                        </p>
+                        <Link to="/orcamento">
+                            <p className="white">
+                                <Secondarybutton name={'Fazer orçamento'} />
+                            </p>
+                        </Link>
                     </div>
                 </div>
             </Fade>

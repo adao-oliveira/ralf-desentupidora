@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import ProjectsInfo from '../assets/data/services';
-import ProjectItem from '../Components/ProjectItem';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import ProjectsInfo from '../assets/data/services'
+import ProjectItem from '../Components/ProjectItem'
 
 const ProjectStyle = styled.div`
 h2 {

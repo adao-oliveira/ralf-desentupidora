@@ -1,8 +1,8 @@
 import React from 'react'
-import { InnerLayout } from '../styles/Layouts';
-import styled from 'styled-components';
-import bgCircles from '../img/circleBg.svg';
-import { BsDiamondFill } from "react-icons/bs";
+import { InnerLayout } from '../styles/Layouts'
+import styled from 'styled-components'
+import bgCircles from '../img/circleBg.svg'
+import { BsDiamondFill } from "react-icons/bs"
 
 function MessagingSection() {
     return (

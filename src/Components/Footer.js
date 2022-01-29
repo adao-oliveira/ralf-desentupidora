@@ -1,7 +1,7 @@
-import React from "react";
-import styled from 'styled-components';
-import { InnerLayout } from '../styles/Layouts';
-import '../styles/footer.css';
+import React from "react"
+import styled from 'styled-components'
+import { InnerLayout } from '../styles/Layouts'
+import '../styles/footer.css'
 // import emailjs from "emailjs-com";
 
 // function sendEmail(e) {
@@ -21,39 +21,39 @@ function Footer() {
     <FooterStyled>
       <InnerLayout>
         <footer>
-          <div class="main-content">
-            <div class="left box">
+          <div className="main-content">
+            <div className="left box">
               <h2> Sobre </h2>
-              <div class="content">
+              <div className="content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste facilis harum eos vel incidunt distinctio corrupti iure</p>
 
-                <div class="social">
-                  <a href="https://facebook.com/"><span class="fab fa-facebook-f"></span></a>
-                  <a href="https://instagram.com/"><span class="fab fa-instagram"></span></a>
-                  <a href="https://whatsapp.com/"><span class="fab fa-whatsapp"></span></a>
+                <div className="social">
+                  <a href="https://facebook.com/"><span className="fab fa-facebook-f"></span></a>
+                  <a href="https://instagram.com/"><span className="fab fa-instagram"></span></a>
+                  <a href="https://whatsapp.com/"><span className="fab fa-whatsapp"></span></a>
                 </div>
               </div>
             </div>
-            <div class="center box">
+            <div className="center box">
               <h2>Endereço</h2>
-              <div class="content">
-                <div class="place">
-                  <span class="fas fa-map-marker"></span>
-                  <span class="text">Rua teste, Campinas</span>
+              <div className="content">
+                <div className="place">
+                  <span className="fas fa-map-marker"></span>
+                  <span className="text">Rua teste, Campinas</span>
                 </div>
 
-                <div class="phone">
-                  <span class="fas fas fa-phone"></span>
-                  <span class="text">+55 19 9999-9999</span>
+                <div className="phone">
+                  <span className="fas fas fa-phone"></span>
+                  <span className="text">+55 19 9999-9999</span>
                 </div>
 
-                <div class="email">
-                  <span class="fas fa-envelope"></span>
-                  <span class="text">exemplo@exemplo.com</span>
+                <div className="email">
+                  <span className="fas fa-envelope"></span>
+                  <span className="text">exemplo@exemplo.com</span>
                 </div>
               </div>
             </div>
-            <div class="right box">
+            <div className="right box">
               <h2>Faça orçamento</h2>
               <div className="content">
                 {/* <form onSubmit={sendEmail}> */}
@@ -81,9 +81,9 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div class="bottom">
-            <div class="center">
-              <span class="credit">Criado por <a href="http://roblesidentity.herokuapp.com/">Robles Identity</a></span> <span class="far fa-copyright"> {new Date().getFullYear()} - Todos os diteitos reservados</span>
+          <div className="bottom">
+            <div className="center">
+              <span className="credit">Criado por <a href="http://roblesidentity.herokuapp.com/">Robles Identity</a></span> <span className="far fa-copyright"> {new Date().getFullYear()} - Todos os diteitos reservados</span>
             </div>
           </div>
         </footer>

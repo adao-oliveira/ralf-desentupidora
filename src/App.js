@@ -1,14 +1,14 @@
-import Header from "./Components/Header";
-import { OuterLayout } from './styles/Layouts';
-import FaqServices from "./Components/FaqServices";
-import MessagingSection from "./Components/MessagingSection";
-import FaqTip from "./Components/FaqTip";
-import Footer from "./Components/Footer";
-import { Fade } from "react-reveal";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import About from './pages/About';
-import Orcamento from './pages/Orcamento';
-import Services from './pages/Services';
+import Header from "./Components/Header"
+import { OuterLayout } from './styles/Layouts'
+import FaqServices from "./Components/FaqServices"
+import MessagingSection from "./Components/MessagingSection"
+import FaqTip from "./Components/FaqTip"
+import Footer from "./Components/Footer"
+import { Fade } from "react-reveal"
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import About from './pages/About'
+import Orcamento from './pages/Orcamento'
+import Services from './pages/Services'
 import ProjectsSection from './Components/ProjectsSection'
 
 function App() {
@@ -40,9 +40,9 @@ function App() {
             <Fade right>
               <FaqServices />
             </Fade>
-            {/* <Fade right>
+            <Fade right>
               <ProjectsSection />
-            </Fade> */}
+            </Fade>
             <Fade left>
               <FaqTip />
             </Fade>
