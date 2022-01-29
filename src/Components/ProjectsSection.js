@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation } from 'swiper'
-import ProjectItem from './ProjectItem'
-import 'swiper/swiper-bundle.min.css'
-import projects from '../assets/data/services'
+import React from 'react';
+import styled from 'styled-components';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from 'swiper';
+import ProjectItem from './ProjectItem';
+import 'swiper/swiper-bundle.min.css';
+import projects from '../assets/data/services';
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -88,6 +88,7 @@ export default function ProjectsSection() {
             }}
           >
             {projects.map((project, index) => {
+              if (index >= 5) return;
               return (
                 <SwiperSlide key={project.id}>
                   <ProjectItem
