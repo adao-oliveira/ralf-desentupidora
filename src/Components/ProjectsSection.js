@@ -23,7 +23,7 @@ h2 {
     margin-top: 5rem;
   }
   .swiper-container {
-    padding-top: 8rem;
+    padding-top: 5rem;
     max-width: 100%;
   }
   .swiper-button-prev,
@@ -52,7 +52,7 @@ h2 {
       flex-direction: column;
       max-width: 400px;
       margin: 0 auto;
-      margin-top: 7rem;
+      margin-top: 2rem;
       gap: 5rem;
       .projectItem__img {
         width: 100%;

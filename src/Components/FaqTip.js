@@ -24,14 +24,14 @@ function FAQSection() {
 
 const FaqStyled = styled.section`
     h3 {
-        margin-top: 18rem;
+        margin-top: -6rem;
     }
     .c-para{
         width: 60%;
         margin: 0 auto;
     }
     .questions-con{
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
     .lines{
         position: absolute;
