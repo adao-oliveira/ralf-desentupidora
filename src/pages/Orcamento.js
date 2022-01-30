@@ -11,13 +11,15 @@ function Orcamento() {
                         <div class="contact-wrapper animated bounceInUp">
                             <div class="contact-info">
                                 <h4>Atendimento online?</h4>
-                                <p>Entre em contato através do nosso Whatsapp</p>
-                                <button id="signin" className="btn btn-primary">
-                                    <a href='https://api.whatsapp.com/send?phone=5519997514121&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20um%20caso%20de%20entupimento!'>
-                                        Entrar em contato
-                                    </a>
-                                </button>
-                                <p className="description description-primary mt-4">Visite nossas redes sociais</p>
+                                <p className='text-white'>Entre em contato através do nosso Whatsapp</p>
+                                <div class="row justify-content-center mr-5 ml-5">
+                                    <button id="signin" className="btn btn-primary">
+                                        <a href='https://api.whatsapp.com/send?phone=5519997514121&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20um%20caso%20de%20entupimento!'>
+                                            Entrar em contato
+                                        </a>
+                                    </button>
+                                </div>
+                                <p className="description description-primary mt-4 text-white text-center">Visite nossas redes sociais</p>
                                 <div className="social-media">
                                     <ul className="list-social-media">
                                         <a className="link-social-media" href="https://facebook.com/">
@@ -137,7 +139,7 @@ a {
     text-transform: uppercase;
     padding: 1em;
     border-radius: 10px;
-    color: #d1d1d1
+    color: #d1d1d1;
 }
 
 .contact-form form button:hover,
@@ -180,6 +182,7 @@ h3 {
     background-color: #d1d1d1;
     border: 1px solid #fff;
     transition: background-color .5s;
+    justify-content: center;
 }
 .btn-primary:hover {
     background-color: #fff;
@@ -225,6 +228,7 @@ h3 {
     line-height: 35px;
     text-align: center;
     color: #95a5a6;
+    margin-left: 45px;
 }
 
 /* LARGE SIZE */
@@ -243,6 +247,11 @@ h3 {
     .contact-info ul,
     .contact-info p {
         text-align: left;
+    }
+}
+@media(max-width: 700px) {
+    .item-social-media {
+        margin-left: 50px;
     }
 }
 `;

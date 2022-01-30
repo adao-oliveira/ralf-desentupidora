@@ -56,34 +56,37 @@ function Footer() {
             <div className="right box">
               <h2>Faça orçamento</h2>
               <div className="content">
-                {/* <form onSubmit={sendEmail}> */}
-                <form>
-                  <div className="name">
-                    <div className="text">Nome completo *</div>
-                    <input type='nome' name="from_name" id="from_name" required />
-                  </div>
-                  <div className="email">
-                    <div className="text">Seu melhor e-mail *</div>
-                    <input type="email" name="email" id="email" required />
-                  </div>
-                  <div className="tell">
-                    <div className="text">Número para contato *</div>
-                    <input type="tell" name="telefone" id="telefone" maxLength="11" onkeypress="mascara(this)" required />
-                  </div>
-                  <div className="msg">
-                    <div className="text">Mensagem... *</div>
-                    <textarea rows="2" cols="25" type='assunto' name="mensagem" id="mensagem" required></textarea>
-                  </div>
-                  <div className="btn">
-                    <button type="submit">Enviar</button>
-                  </div>
-                </form>
+                <div class="contact-form">
+                  <form action="">
+                    <p>
+                      <label>Nome completo</label>
+                      <input type="text" name="name" />
+                    </p>
+                    <p>
+                      <label>E-mail</label>
+                      <input type="email" name="email" />
+                    </p>
+                    <p>
+                      <label>Número para contato</label>
+                      <input type="tel" name="phone" />
+                    </p>
+                    <p class="block">
+                      <label>Mensagem</label>
+                      <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                      <button>
+                        Enviar
+                      </button>
+                    </p>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
           <div className="bottom">
             <div className="center">
-              <span className="credit">Criado por <a href="http://roblesidentity.herokuapp.com/">Robles Identity</a></span> <span className="far fa-copyright"> {new Date().getFullYear()} - Todos os diteitos reservados</span>
+              <span className="credit">Desenvolvido por <a href="http://roblesidentity.herokuapp.com/">ROBLES IDENTITY</a></span> <span className="far fa-copyright"> {new Date().getFullYear()} - Todos os diteitos reservados</span>
             </div>
           </div>
         </footer>
@@ -100,7 +103,7 @@ const FooterStyled = styled.footer`
     .card {
       margin-top 1rem;
       margin-bottom 1rem;
-    }
+    } 
 
 `;
 

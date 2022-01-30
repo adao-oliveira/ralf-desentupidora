@@ -17,17 +17,19 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__info {
     margin-top: 1rem;
-    background-color: var(--blue-primary);
+    background-color: #fff;
     padding: 1rem;
     border-radius: 12px;
   }
   .projectItem__title {
     font-size: 2rem;
+    color: var(--blue-primary);
   }
   .projectItem__desc {
     font-size: 1.5rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
+    color: #56534e;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
