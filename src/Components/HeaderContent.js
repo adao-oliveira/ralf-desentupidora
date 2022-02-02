@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Secondarybutton from './SecondaryButton'
 import { Fade } from 'react-reveal'
 import { Link } from 'react-router-dom'
+import '../styles/efect.css'
 
 function HeaderContent() {
     return (
@@ -10,7 +11,7 @@ function HeaderContent() {
             <Fade left cascade>
                 <div className="left-content">
                     <div className="left-text-container">
-                        <h1>Precisa de uma desentupidora em Campinas?</h1>
+                        <h2>Precisa de uma desentupidora em <span>Campinas?</span></h2>
                         <Link to="/orcamento">
                             <p className="white">
                                 <Secondarybutton name={'Fazer orçamento'} />
@@ -19,11 +20,11 @@ function HeaderContent() {
                     </div>
                 </div>
             </Fade>
-            <Fade right>
+            {/* <Fade right>
                 <div className="right-content d-none d-md-block">
                     <img src="https://freepikpsd.com/file/2019/10/desentupidora-png-2-Transparent-Images.png" alt="" className="phone" />
                 </div>
-            </Fade>
+            </Fade> */}
         </HeaderContentStyled>
     )
 }
@@ -43,8 +44,7 @@ const HeaderContentStyled = styled.div`
         .white{
             color:white;
         }
-        h1{
-            color: #111;
+        h2{
             font-size: 4rem;
             font-weight: 600;
             @media screen and (max-width: 700px){

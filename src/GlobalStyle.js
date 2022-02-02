@@ -9,14 +9,12 @@ const GlobalStyle = createGlobalStyle`
         --lavender-secondary: #6A6D9E; /*Primary Font Color*/
         --dark-primary: #16194F;
         --border-colour: #CAD6F1;
-        
         --white-bg: #fff;
         --gray-1: #d1d1d1;
         --deep-dark: #1E1E1E;
         --gray-2: #363636;
         --white : white;
         --black: black;
-
         --dark-bg: #262626;
         --deep-dark: #1E1E1E;
     }
@@ -25,7 +23,6 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         list-style: none;
         box-sizing: border-box;
-        font-family: 'Nunito', sans-serif;
         text-decoration: none;
     }
 
@@ -33,33 +30,20 @@ const GlobalStyle = createGlobalStyle`
         background-color: var(--neutral-light);
         color: white;
     }
-
-    a{
-        color: inherit;
-    }
     p{
         color: var(--lavender-secondary);
         line-height: 1.9rem;
+        font-size: 1rem;
+        margin-top: var(--flow-space, 1em);
     }
-    .secondary-heading{
-        font-size: 3rem;
-        color: var(--blue-primary);
-        
-    }
-    .small-heading{
-        font-size: 2.5rem;
-        color: var(--blue-primary);
-        text-align: center;
-    }
-    span{
-        color: var(--accent-pink);
+    h2{
+        font-size: 2rem;
     }
 
     //Utilities
     .c-para{
         text-align: center;
     }
-
 
     * {
     box-sizing: border-box;

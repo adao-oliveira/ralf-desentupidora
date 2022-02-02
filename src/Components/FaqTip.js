@@ -7,7 +7,7 @@ function FAQSection() {
     return (
         <FaqStyled>
             <InnerLayout>
-                <h3 className="small-heading">Dicas infalíveis para evitar <span>entupimentos</span></h3>
+                <h2>Dicas infalíveis para evitar entupimentos</h2>
 
                 <div className="questions-con">
                     {
@@ -23,7 +23,9 @@ function FAQSection() {
 }
 
 const FaqStyled = styled.section`
-    h3 {
+    h2 {
+        text-align: center;
+        color: var(--blue-primary);
         margin-top: -6rem;
     }
     .c-para{

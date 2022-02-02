@@ -14,7 +14,6 @@ h2 {
   margin-top: -100px;
   text-align: center;
   color: var(--blue-primary);
-  font-size: 2.5rem;
 }
   padding: 10rem 0;
   .projects__allItems {

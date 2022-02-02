@@ -7,7 +7,6 @@ const ProjectStyle = styled.div`
 h2 {
     text-align: center;
     color: var(--blue-primary);
-    font-size: 2rem;
   }
   padding: 10rem 0;
   .projects__allItems {

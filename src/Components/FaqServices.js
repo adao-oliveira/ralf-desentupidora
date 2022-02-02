@@ -11,7 +11,7 @@ function ChartSection() {
                 <div className="container">
                     <div className="section first-section">
                         <div className="column-left">
-                            <h2>Nossos serviços</h2>
+                            <h2 className='text-left'>Nossos serviços</h2>
                             <div className="chart-left">
                                 <div className="questions-con">
                                     {
@@ -96,8 +96,7 @@ const ChartStyled = styled.section`
         color: var(--white);
     }
     p {
-        color: #d1d1d1;
-        font-size: 14px;
+        color: #fff;
         font-weight: 600;
         line-height: 30px;
     }
