@@ -45,7 +45,7 @@ export default function ProjectItem({
   return (
     <ProjectItemStyles>
       <Link to="/projects" className="projectItem__img">
-        <img className='material-icons-outlined' alt="project img" />
+        <img src={img} alt="project img" />
       </Link>
       <div className="projectItem__info">
         <Link to="#">
