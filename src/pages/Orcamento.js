@@ -53,7 +53,7 @@ function Orcamento() {
                                         <input type="email" name="email" />
                                     </p>
                                     <p>
-                                        <label>Número para contato</label>
+                                        <label>Telefone para contato</label>
                                         <input type="tel" name="phone" />
                                     </p>
                                     <p class="block">

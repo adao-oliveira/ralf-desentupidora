@@ -16,8 +16,8 @@ const ProjectItemStyles = styled.div`
     }
   }
   .projectItem__info {
-    margin-top: 1rem;
-    background-color: #fff;
+    // margin-top: 1rem;
+    background-color: #d1d1d1;
     padding: 1rem;
     border-radius: 12px;
   }

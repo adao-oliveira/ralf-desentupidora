@@ -38,7 +38,7 @@ function ChartSection() {
 
                                 <label className="label-input-faq" for="">
                                     <i className="fas fa-phone icon-form-faq"></i>
-                                    <input type="number" maxLength={11} placeholder="Número de telefone com (DDD)" />
+                                    <input type="number" maxLength={11} placeholder="Telefone com (DDD)" />
                                 </label>
 
                                 <label className="label-input-faq" for="">
