@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Secondarybutton from './SecondaryButton'
 import { Fade } from 'react-reveal'
 import { Link } from 'react-router-dom'
-import '../styles/efect.css'
 
 function HeaderContent() {
     return (
@@ -33,11 +32,18 @@ const HeaderContentStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3rem;
+
+    @media screen and (min-width: 740px) {
+        .left-content{
+            margin-top: 150px;
+        }
+    }
+
     @media screen and (max-width: 700px){
         grid-template-columns: repeat(1, 1fr);
     }
+    
     .left-content{
-        margin-top: 150px;
         display: flex;
         align-items: center;
         padding-right: 3rem;
@@ -51,12 +57,10 @@ const HeaderContentStyled = styled.div`
                 font-size: 2rem;
             }
         }
-
         .white{
             padding: 1.4rem 0;
             line-height: 1.8rem;
         }
-    }
 
     .right-content{
         position: relative;
@@ -67,6 +71,36 @@ const HeaderContentStyled = styled.div`
             margin-top: 20rem;
         }
     }
+
+    h2{
+        color: var(--blue-primary) !important;
+        margin: 10px 0 0 10px;
+        overflow: hidden;
+        animation: type 4s steps(60, end); 
+      }
+      
+      h2:nth-child(2){
+        animation: type2 8s steps(60, end);
+      }
+      
+      h2 span{
+        color: var(--blue-primary) !important;
+        text-decoration: none;
+        background-color: #d1d1d1;
+        border-radius: 5px;;
+      }
+      
+      span{
+        animation: blink 1s infinite;
+      }
+      
+      @keyframes blink{
+        to{opacity: .0;}
+      }
+      
+      ::selection{
+        background: black;
+      }
 `;
 
 export default HeaderContent;

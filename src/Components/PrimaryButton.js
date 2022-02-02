@@ -12,7 +12,6 @@ function PrimaryButton({name}) {
 const ButtonStyled = styled.button`
     background-color: var(--accent-pink);
     padding: .7rem 2rem;
-    font-family: inherit;
     font-size: inherit;
     color: inherit;
     border-radius: 20px;

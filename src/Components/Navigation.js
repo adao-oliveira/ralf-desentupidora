@@ -27,7 +27,6 @@ const NavStyles = styled.nav`
     a {
       text-decoration: none;
       display: inline-block;
-      font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
       color: var(--blue-primary);

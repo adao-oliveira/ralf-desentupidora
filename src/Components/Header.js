@@ -16,7 +16,7 @@ function Header() {
 }
 
 const HeaderStyled = styled.header`
-    min-height: 100vh;
+min-height: 70vh;
     width: 100%;
     background-image: url(${bg});
     background-repeat: no-repeat;
@@ -32,6 +32,11 @@ const HeaderStyled = styled.header`
         }
         @media screen and (max-width: 990px){
             padding: 5rem 10px;
+        }
+    }
+    @media screen and (min-width: 740px) {
+        .header-content{
+            min-height: 80vh;
         }
     }
 `;

@@ -38,8 +38,9 @@ const GlobalStyle = createGlobalStyle`
     }
     h2{
         font-size: 2rem;
+        font-family: 'Dejavu Sans', Arial, Verdana, sans-serif;   
     }
-
+ 
     //Utilities
     .c-para{
         text-align: center;
@@ -49,9 +50,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+  .section {
+    background-color: #fff;
+  }
   
-`;
+  `;
 
 export default GlobalStyle;

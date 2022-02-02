@@ -32,7 +32,7 @@ function FaqServies({ title, description }) {
 }
 
 const QuestionStyled = styled.div`
-background-color: #ecf0f1;
+background-color: #d1d1d1;
 margin: 1rem 0;
 padding: 10px 10px;
 border-radius: 24px;

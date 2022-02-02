@@ -27,7 +27,6 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__desc {
     font-size: 1.5rem;
-    font-family: 'RobotoMono Regular';
     margin-top: 1rem;
     color: #56534e;
   }

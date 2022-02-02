@@ -30,25 +30,26 @@ function App() {
             <Services />
           </Route>
 
-          <OuterLayout>
-            {/* <Fade left>
-            <CardSection />
-          </Fade> */}
-            <Fade left>
-              <MessagingSection />
-            </Fade>
-            <Fade right>
-              <FaqServices />
-            </Fade>
-            <Fade right>
-              <ProjectsSection />
-            </Fade>
-            <Fade left>
-              <FaqTip />
-            </Fade>
-          </OuterLayout>
-
         </Switch>
+
+        <div className="card-body">
+          <div className="section">
+            <OuterLayout>
+              <Fade left>
+                <MessagingSection />
+              </Fade>
+              <Fade right>
+                <FaqServices />
+              </Fade>
+              <Fade right>
+                <ProjectsSection />
+              </Fade>
+              <Fade left>
+                <FaqTip />
+              </Fade>
+            </OuterLayout>
+          </div>
+        </div>
         <Fade bottom>
           <Footer />
         </Fade>

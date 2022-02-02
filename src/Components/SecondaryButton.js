@@ -14,7 +14,6 @@ function Secondarybutton({name}) {
 const SecondaryButtonStyled = styled.button`
     background-color: #fff;
     padding: 1rem 2rem;
-    font-family: inherit;
     font-size: 22px;
     color: #09456c;
     font-weight: bold;
